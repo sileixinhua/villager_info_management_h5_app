@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+	<style>
+		.title {
+			margin: 20px 15px 10px;
+			color: #6d6d72;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 导航栏 选项卡 -->
+	<nav class="mui-bar mui-bar-tab">
+		<a id="defaultTab" class="mui-tab-item mui-active" href="tab-webview-subpage-about.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label" href="index.html">首页</span>
+		</a>
+		<a class="mui-tab-item" href="./view/my.html">
+			<span class="mui-icon mui-icon-contact"></span>
+			<span class="mui-tab-label">我的</span>
+		</a>
+	</nav>
+	
+	<!-- 图片轮播 -->
+	<div id="slider" class="mui-slider" >
+		<div class="mui-slider-group mui-slider-loop">
+			<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="./images/em_village_talk.png">
+				</a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="./images/em_village_talk.png">
+				</a>
+			</div>
+			<!-- 第二张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="./images/em_village_talk.png">
+				</a>
+			</div>
+			<!-- 第三张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="./images/em_village_talk.png">
+				</a>
+			</div>
+			<!-- 第四张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="./images/em_village_talk.png">
+				</a>
+			</div>
+			<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="../images/shuijiao.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="mui-slider-indicator">
+			<div class="mui-indicator mui-active"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+		</div>
+	</div>
+	
+	<div class="title">
+		我要说事
+	</div>
+	<!-- 九宫格 -->
+	<div class="mui-content">
+	        <ul class="mui-table-view mui-grid-view mui-grid-9">
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <img src="./images/icon_home_village_news.png"></img>
+	                    <div class="mui-media-body">村内资讯</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <img src="./images/icon_home_handle_upload.png"></img>
+	                    <div class="mui-media-body">随手上报</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <img src="./images/icon_home_event_report.png"></img>
+	                    <div class="mui-media-body">事项报备</div></a></li>
+			</ul>
+	</div>
+	
+	<div class="title">
+		我要议事
+	</div>
+	<!-- 九宫格 -->
+	<div class="mui-content">
+	        <ul class="mui-table-view mui-grid-view mui-grid-9">
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <img src="./images/icon_home_meeting_record.png"></img>
+	                    <div class="mui-media-body">会议直播</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <img src="./images/icon_home_vote_investigate.png"></img>
+	                    <div class="mui-media-body">投票调研</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <img src="./images/icon_home_file_upload.png"></img>
+	                    <div class="mui-media-body">资料上传</div></a></li>
+			</ul>
+	</div>
+	
+	<div class="title">
+		我要办事
+	</div>
+	<!-- 九宫格 -->
+	<div class="mui-content">
+	        <ul class="mui-table-view mui-grid-view mui-grid-9">
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <img src="./images/icon_home_home_stay_report.png"></img>
+	                    <div class="mui-media-body">民宿报备</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <img src="./images/icon_home_beautiful_village.png"></img>
+	                    <div class="mui-media-body">美丽乡村</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <img src="./images/icon_home_village_property_transaction.png"></img>
+	                    <div class="mui-media-body">产权交易</div></a></li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+				        <img src="./images/icon_home_three_property_management.png"></img>
+				        <div class="mui-media-body">三资管理</div></a></li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+				        <img src="./images/icon_home_trust_rank.png"></img>
+				        <div class="mui-media-body">诚信指数</div></a></li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+				        <img src="./images/icon_home_township_counselor.png"></img>
+				        <div class="mui-media-body">乡贤参事</div></a></li>
+			</ul>
+	</div>
+	
+	<div class="title">
+		我要评事
+	</div>
+	<!-- 九宫格 -->
+	<div class="mui-content">
+	        <ul class="mui-table-view mui-grid-view mui-grid-9">
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <img src="./images/icon_home_results_public.png"></img>
+	                    <div class="mui-media-body">结果公示</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <img src="./images/icon_home_satisfaction_measurement.png"></img>
+	                    <div class="mui-media-body">满意度测评</div></a></li>
+			</ul>
+	</div>
+	
+	<div class="title">
+		新闻资讯
+	</div>
+	<ul class="mui-table-view">
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui-media-object mui-pull-right" src="./images/icon_home_village_news.png">
+				<div class="mui-media-body">
+					2021-12-09 村民代表大会报告
+					<p class='mui-ellipsis'>2021-12-09 村民代表大会报告</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui-media-object mui-pull-right" src="./images/icon_home_village_news.png">
+				<div class="mui-media-body">
+					2021-12-09 村里通告
+					<p class='mui-ellipsis'>2021-12-09 村里通告</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+	
+	<div class="mui-content">
+	<div id="tabbar-with-my" class="mui-control-content">
+	</div>
+	</div>
+	
+	<script src="../js/mui.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		//导航栏 选项卡 
+		 //mui初始化
+		mui.init();
+		var subpages = ['tab-webview-subpage-about.html', './view/my.html'];
+		var subpage_style = {
+			top: '45px',
+			bottom: '51px'
+		};
+		
+		var aniShow = {};
+		
+		 //创建子页面，首个选项卡页面显示，其它均隐藏；
+		mui.plusReady(function() {
+			var self = plus.webview.currentWebview();
+			for (var i = 0; i < 4; i++) {
+				var temp = {};
+				var sub = plus.webview.create(subpages[i], subpages[i], subpage_style);
+				if (i > 0) {
+					sub.hide();
+				}else{
+					temp[subpages[i]] = "true";
+					mui.extend(aniShow,temp);
+				}
+				self.append(sub);
+			}
+		});
+		 //当前激活选项
+		var activeTab = subpages[0];
+		var title = document.getElementById("title");
+		 //选项卡点击事件
+		mui('.mui-bar-tab').on('tap', 'a', function(e) {
+			var targetTab = this.getAttribute('href');
+			if (targetTab == activeTab) {
+				return;
+			}
+			//更换标题
+			title.innerHTML = this.querySelector('.mui-tab-label').innerHTML;
+			//显示目标选项卡
+			//若为iOS平台或非首次显示，则直接显示
+			if(mui.os.ios||aniShow[targetTab]){
+				plus.webview.show(targetTab);
+			}else{
+				//否则，使用fade-in动画，且保存变量
+				var temp = {};
+				temp[targetTab] = "true";
+				mui.extend(aniShow,temp);
+				plus.webview.show(targetTab,"fade-in",300);
+			}
+			//隐藏当前;
+			plus.webview.hide(activeTab);
+			//更改当前活跃的选项卡
+			activeTab = targetTab;
+		});
+		 //自定义事件，模拟点击“首页选项卡”
+		document.addEventListener('gohome', function() {
+			var defaultTab = document.getElementById("defaultTab");
+			//模拟首页点击
+			mui.trigger(defaultTab, 'tap');
+			//切换选项卡高亮
+			var current = document.querySelector(".mui-bar-tab>.mui-tab-item.mui-active");
+			if (defaultTab !== current) {
+				current.classList.remove('mui-active');
+				defaultTab.classList.add('mui-active');
+			}
+		});
+		
+		// 图片轮播
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		var slider = mui("#slider");
+		document.getElementById("switch").addEventListener('toggle', function(e) {
+			if (e.detail.isActive) {
+				slider.slider({
+					interval: 5000
+				});
+			} else {
+				slider.slider({
+					interval: 0
+				});
+			}
+		});
+		
+		
+	</script>
+</body>
+</html>
